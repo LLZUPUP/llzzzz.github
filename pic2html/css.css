@@ -1,0 +1,115 @@
+body,html {
+    width: 1024px;
+    font-size: 13px;
+    line-height: 1.62;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: #37a;
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+}
+#screening {
+    width: 675px;
+    margin: 40px 0 0 10px;
+}
+/* screening_hd */
+.screening_hd h2{
+    font-size: 16px;
+    line-height: 150%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+.screening_hd h2 span {
+    font-size: 13px;
+    margin-left: 15px;
+}
+/* screening_bd */
+#screening .screening_bd {
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.screening_bd .movies-content {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    white-space: nowrap;
+    display: flex;
+    flex: 1;
+}
+.screening_bd .movies-items {
+    display: inline-block;
+    width: 115px;
+    height: 270px;
+    font-size: 12px;
+    overflow: hidden;
+    margin-right: 25px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+}
+#screening .poster {
+    height: 161px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+#screening .movies-items img {
+    width: 128px;
+    max-width: 100%;
+    vertical-align: center;
+}
+#screening .title {
+    font-size: 14px;
+    height: 22px;
+    text-align: center;
+}
+#screening .title a {
+    color: #000000;    
+}
+#screening .rating {
+    height: 19px;
+    margin: 4px auto 2px;
+}
+#screening .rating .stars {
+    width: 55px;
+    margin-right: 4px;
+}
+#screening .rating span {
+    float: left;
+}
+#screening .rating .stars35 {
+    background-position: 0 -33px;
+}
+#screening .rating .rate {
+    color: #e09015;
+    font-size: 12px;
+}
+#screening .ticket_btn span {
+    display: block;
+    text-align: center;
+    width: 90px;
+    height: 24px;
+    margin: 0 auto;
+    background-color: #268dcd;
+}
+#screening .ticket_btn a {
+    color: #fff;
+    line-height: 24px;
+}
+.stars35,.stars30,.stars45 {
+    display: inline-block;
+    background: url(https://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s.png) no-repeat;
+}
+
