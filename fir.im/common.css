@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ff0;
+}
+.plane-wrapper {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  animation: planeMove 8s infinite linear alternate;
+}
+.plane-wrapper .rotate-container {
+  position: absolute;
+  left: 13.1%;
+  top: 51.7003%;
+  animation: propeller 0.2s linear infinite;
+}
+.section-1.animation-out .plane-wrapper {
+  animation: plane-out 1.3s forwards ease-out;
+}
+@-moz-keyframes planeMove {
+  0%, 50%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-6px, -18px);
+  }
+  75% {
+    transform: translate(6px, 10px);
+  }
+}
+@-webkit-keyframes planeMove {
+  0%, 50%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-6px, -18px);
+  }
+  75% {
+    transform: translate(6px, 10px);
+  }
+}
+@-o-keyframes planeMove {
+  0%, 50%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-6px, -18px);
+  }
+  75% {
+    transform: translate(6px, 10px);
+  }
+}
+@keyframes planeMove {
+  0%, 50%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-6px, -18px);
+  }
+  75% {
+    transform: translate(6px, 10px);
+  }
+}
+@-moz-keyframes propeller {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes propeller {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes propeller {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes propeller {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes plane-out {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  30% {
+    transform: scale(0.6) translateX(180px);
+  }
+  100% {
+    transform: scale(1.5) translateX(-1440px);
+  }
+}
+@-webkit-keyframes plane-out {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  30% {
+    transform: scale(0.6) translateX(180px);
+  }
+  100% {
+    transform: scale(1.5) translateX(-1440px);
+  }
+}
+@-o-keyframes plane-out {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  30% {
+    transform: scale(0.6) translateX(180px);
+  }
+  100% {
+    transform: scale(1.5) translateX(-1440px);
+  }
+}
+@keyframes plane-out {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  30% {
+    transform: scale(0.6) translateX(180px);
+  }
+  100% {
+    transform: scale(1.5) translateX(-1440px);
+  }
+}
