@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>解锁页</title>
+    <link rel="stylesheet" href="./screen.css">
+</head>
+<script>
+    window.onload=function() {
+        let s = window.document;
+        console.log(s)
+        let r = s.documentElement;
+        console.log(r.clientWidth)
+        let colWidth = r.clientWidth/10;
+        r.style.fontSize=colWidth+"px";
+        console.log(r.style.fontSize)
+
+    }
+
+</script>
+<body>
+    <div class="screen">
+        <div class="screen_hd">
+            <input class="password" type="password" placeholder="请输入密码" disabled/>
+        </div>
+        <div class="screen_bd">
+            <div class="button">
+                <a href="#">1</a>
+            </div>
+            <div class="button">
+                <a href="#">2</a>
+            </div>
+            <div class="button">
+                <a href="#">3</a>
+            </div>
+            <div class="button">
+                <a href="#">4</a>   
+            </div>
+            <div class="button">
+                <a href="#">5</a>
+            </div>
+            <div class="button">
+                <a href="#">6</a>
+            </div>
+            <div class="button">
+                <a href="#">7</a>
+            </div>
+            <div class="button">
+                <a href="#">8</a>
+            </div>
+            <div class="button">
+                <a href="#">9</a>
+            </div>
+            <div class="button zero">
+                <a href="#">0</a>
+            </div>
+        </div>
+        <div class="screen_ft">
+            <button class="ft_left">紧急呼叫</button>
+            <button class="ft_right">取消</button>
+        </div>
+    </div>
+</body>
+</html>

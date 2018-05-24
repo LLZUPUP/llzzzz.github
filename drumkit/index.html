@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 10px;
+            background: url(http://1.imgur.com/b9r5sEL.jpg) bottom center no-repeat;
+            background-size: cover;
+        }
+        body,html {
+            margin:0;
+            padding: 0;
+            font-family: monospace;
+        }
+        .keys {
+            display: flex; /*弹性布局*/
+            flex:1; /*父子关系处理很好的布局*/
+            min-height: 100vh;
+            align-items: center;
+            justify-content:center;
+        }
+        .key {
+            border: .4rem solid #000;
+            border-radius: .5rem;
+            margin: 1rem;
+            font-size: 1.5rem;
+            padding: 1rem .5rem;
+            width: 10rem;
+            text-align: center;
+            color: white;
+            background-color: rgba(0,0,0,.4);
+            text-shadow: 0 0 .5rem #000;
+        }
+        .key>div {
+            /* display: inline; */
+            font-size: 4rem;
+        }
+        .sound {
+            font-size: 1.2rem;
+            text-transform:uppercase;
+            letter-spacing: .1rem;
+            color: #ffc600;
+        }
+        .playing {
+            border-color: #ffc900;
+            box-shadow:0 0 1rem #ffc600;
+            transform:scale(1.1);
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- emmet html快速神器 css语法来提速
+    支持使用css的选择器快速完成html页面制作
+    .className
+    自定义属性去丰富标签的能力
+    > -->
+    <div class="keys">
+        <div class="key playing" data-key="65">
+            <div>A</div>
+            <span class="sound">clap</span>
+        </div>
+        <div class="key" data-key="83">
+            <div>S</div>
+            <span class="sound">hihat</span>
+        </div>
+        <div class="key" data-key="68">
+            <div>D</div>
+            <span class="sound">kick</span>
+        </div>
+        <div class="key" data-key="70">
+            <div>F</div>
+            <span class="sound">openhat</span>
+        </div>
+        <div class="key" data-key="71">
+            <div>G</div>
+            <span class="sound">boom</span>
+        </div>
+        <div class="key" data-key="72">
+            <div>H</div>
+            <span class="sound">ride</span>
+        </div>
+        <div class="key" data-key="74">
+            <div>J</div>
+            <span class="sound">snare</span>
+        </div>
+        <div class="key" data-key="75">
+            <div>K</div>
+            <span class="sound">tom</span>
+        </div>
+        <div class="key" data-key="76">
+            <div>L</div>
+            <span class="sound">tink</span>
+        </div>
+    </div>
+    <audio src="sounds/clap.wav" autoplay></audio>
+    <audio src="sounds/hihat.wav"></audio>
+    <audio src="sounds/kick.wav"></audio>
+    <audio src="sounds/openhat.wav"></audio>
+    <audio src="sounds/boom.wav" ></audio>
+    <audio src="sounds/ride.wav"></audio>
+    <audio src="sounds/snare.wav"></audio>
+    <audio src="sounds/tom.wav"></audio>
+    <audio src="sounds/tink.wav" autoplay></audio>
+    <!-- 命令行与系统交互的时候，示例：windows PATH路径 -->
+</body>
+</html>
