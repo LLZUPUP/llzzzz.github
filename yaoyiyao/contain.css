@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: #292d2e;
+    width: 10rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hand {
+    height: 50vh;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hand img {
+    animation: hand 2s linear infinite;
+}
+@keyframes hand {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(15deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+.loading img {
+    width: 2.66666em;
+    animation: load 2s linear infinite;
+    margin-top: -5rem;
+}
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loading {
+    opacity: 0;
+}
+.result {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #393B3C;
+    padding: .4rem;
+    border-radius: .5rem;   
+    border: 1px solid #2C2C2C; 
+    box-shadow: 0 0 0 1px #4D4F50 inset;
+    opacity: 0;
+}
+.result_a {
+    animation: show 2s ease 1 forwards; 
+}
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(0rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(2rem);
+    }
+}
+.result img {
+    width: 1.6rem;
+    vertical-align: top;
+}
+.result .text {
+    font-size: .4rem;
+    display: inline-block;
+    color: #fff;
+    font-weight: normal;
+    font-family: Sans-serif;
+    box-sizing: border-box;
+    height: 1.6rem;
+}
+.result .text span {
+    display: block;
+    line-height: 0.9rem;
+}

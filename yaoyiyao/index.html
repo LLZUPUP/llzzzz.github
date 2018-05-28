@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>摇一摇</title>
+    <script>
+        let w = window.document;
+        let i = w.documentElement;
+        let scrWidth = i.clientWidth/10;
+        i.style.fontSize=scrWidth+'px';
+    </script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./contain.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hand">
+            <img src="./hand.png" alt="">
+        </div>
+        <div class="loading">
+            <img src="./spinner.png" alt="">
+        </div>
+        <div class="result">
+            <img src="./touxiang.jpeg" alt="">
+            <div class="text">
+                <span>摇晃结果</span>
+                <span>恭喜你摇到了本大帅逼</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
